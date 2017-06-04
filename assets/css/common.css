@@ -1,16 +1,120 @@
-/*
- * Clases reutilizables para el proyecto
- * (Aquí pueden ir las clases de tu grid)
- */
+/* RESET */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.71429;
+  background-color: #fff;
+}
+img {
+  vertical-align: middle;
+}
+a {
+  color: #373B47;
+  text-decoration: none;
+  transition: .5s all ease;
+}
+a:hover {
+  color: #E95853;
+  transition: .5s all ease;
+}
+header {
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  top: 0;
+}
+h1 {
+  font-size: 56px;
+}
+h2 {
+  font-size: 49px;
+}
+h3 {
+  font-size: 42px;
+}
+h4 {
+  font-size: 35px;
+}
+h5 {
+  font-size: 21px;
+}
+h6 {
+  font-size: 14px;
+}
 
+/* FLEXBOX */
+.flex-container {
+	display: flex;
+}
+.flex-container .row {
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* MENÚ */
+.link {
+  font-weight: 700;
+  padding: 21px;
+}
+.menu {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.menu.flex-container {
+	justify-content: flex-start;
+}
+.logo-container {
+	margin-left: auto;
+	margin-right: 20px;
+}
+.flex-container .logo {
+	width: 70px;
+	height: 70px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    height: 140px;
+    background-color: #373b47;
+    color: #fff;
+    padding-top: 35px;
+    flex-direction: column;
+}
+
+/* HELPER CLASSES */
 .mb-0 {
   margin-bottom: 0;
 }
-
 .mt-0 {
   margin-top: 0;
 }
-
 .text-uppercase {
   text-transform: uppercase;
+}
+.img-responsive {
+	max-width: 100%;
+	height: auto;
+}
+.hidden {
+	display: none !important;
 }

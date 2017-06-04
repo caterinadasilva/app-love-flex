@@ -1,7 +1,148 @@
-body {
-  margin: 0 auto;
-  font-size: 16px;
-  line-height: 1.71429;
+/*
+ * Ingresa el CSS del proyecto en este archivo
+ */
+#top {
+    position: absolute;
+    top: 0;
+}
+#home {
+	min-height: 600px;
+	height: 50vh;
+	margin-top: 80px;
+
+	background-image: url(../images/bg-home.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	text-align: center;
+
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	color: whitesmoke;
+}
+#home h2 {
+    font-size: 28px;
+}
+#home h1 {
+  margin: 35px 0;
+}
+.text-home {
+  font-size: 2.4em;
+}
+.btn-home {
+  background: rgb(46, 204, 113);
+  color: #fff;
+  padding: 11px 20px;
+  border-radius: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 63px;
+  font-size: 14px;
+  transition: .5s all ease;
+}
+.btn-home:hover, .btn-home:focus, .btn-home:active {
+  background-color: #0AC25A;
+  color: #fff;
+  transition: .5s all ease;
+}
+#services {
+  background-color: #f17c72;
+  text-align: center;
+  color: #fff;
+  padding: 70px 7px;
+}
+#services.flex-container {
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+    flex-direction: column;
+}
+#services h4, #work h4 {
+  max-width: 840px;
+  width: 90%;
+  margin: 0 auto 42px;
+  font-size: 95%;
+}
+.box-services {
+	font-size: 1.2em;
+	font-weight: bolder;
+    max-width: 25%;
+}
+.box-services h5 {
+  padding-top: 21px;
+}
+.box-services img {
+  height: auto;
+    width: 400px;
+    max-width: 100%;
+}
+.text-services {
+  font-size: 35px;
+  letter-spacing: 2px;
+  margin: 42px 0;
+}
+#work {
+  text-align: center;
+  padding: 70px 7px;
+  overflow: hidden;
+  flex-direction: column;
+}
+#work > div > img {
+  margin: 63px 0;
+}
+#work .row:first-child {
+    flex-direction: column;
+}
+#work .row {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#work .modal {
+    max-width: 30%;
+}
+.work-services {
+    flex-direction: column;
+}
+.work-services img {
+  width: 100%;
+}
+.work-services h5 {
+  padding-top: 35px;
+}
+#work-services-modal {
+  width: 100%;
+  height: 100vh;
+  background: rgba(46, 204, 113, .8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+}
+.modal-body {
+  position: relative;
   background-color: #fff;
-  /* Enlaza la tipografia Open Sans */
+  border-radius: 10px;
+  padding: 1em .5em .5em;
+  max-width: 900px;
+  margin: 10vh auto;
+  width: 90%;
+  text-align: center;
+}
+.modal-body img {
+  max-width: 100%;
+  height: auto;
+}
+#close {
+  background-image: url(../images/close.png);
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  top: 1em;
+  right: 1em;
+  position: absolute;
+  cursor: pointer;
 }

@@ -1,19 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
-	<title>AppLove with Flexbox</title>
-	<!-- Importa fontAwesome -->
-	
-	<!-- Importa la fuente del proyecto (Open Sans de Google Fonts (https://fonts.google.com) -->
-	
-	<!-- Enlaza tu CSS reutilizable aquí (common.css) -->
-	
-	<!-- Enlaza tu CSS del proyecto aquí -->
-	
+	<title>Applove with Flexbox</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Desarrollo Ejercicio Guiado de la Lección 26: Flexbox">
+	<meta name="author" content="Caterina Da Silva">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<script src="https://use.fontawesome.com/d2c9b2c5c1.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/common.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 <body>
-
-	<!-- Enlaza tu JS del proyecto aquí -->
+<div id="top"></div>
+<header>
+	<nav class="menu flex-container">
+		<a href="#services" class="text-uppercase link">Services</a>
+		<a href="#work" class="text-uppercase link">Work</a>
+		<a href="#team" class="text-uppercase link">The team</a>
+		<div class="logo-container">
+			<a href="#top"><img src="assets/images/logo-r.png" class="logo" alt="Logo" width="70"></a>
+		</div>
+	</nav>
+</header>
+<section id="home" class="flex-container">
+	<h2>YOU JUST FOUND AN UNTILMATE</h2>
+	<h1 class="text-uppercase text-home mb-0">We are applove from heart</h1>
+	<p class="text-uppercase mt-0">Handcrafted - Modern design - Pixel perfect - Passioned design</p>
+	<a href="#services" class="btn-home">View services</a>
+</section>
+<section id="services" class="flex-container">
+	<h2 class="text-uppercase text-services mt-0">Services</h2>
+	<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam voluptatum atque ipsa consequatur ea ipsam ducimus, minus iste similique perspiciatis tempore sunt, amet. Iusto similique distinctio, sunt ad officia nobis!</h4>
+	<div class="row">
+		<div class="box-services">
+			<img src="assets/images/website.png" alt="Website">
+			<h5 class="mb-0">USER INTERFACE DESIGN</h5>
+			<h6 class="m-0">Wireframing</h6>
+			<h6 class="m-0">Prototyping</h6>
+			<h6 class="m-0">Usability Testing</h6>
+		</div>
+		<div class="box-services">
+			<img src="assets/images/img-1.png" alt="Website">
+			<h5 class="mb-0">CONCEPT AND IDEAS</h5>
+			<h6 class="m-0">Conceptualization</h6>
+			<h6 class="m-0">Digital Branding</h6>
+			<h6 class="m-0">Product Strategy</h6>
+		</div>
+		<div class="box-services">
+			<img src="assets/images/lapiz.png" alt="Website">
+			<h5 class="mb-0">DESIGN AND BRANDING</h5>
+			<h6 class="m-0">Interaction Design</h6>
+			<h6 class="m-0">Graphic Design</h6>
+			<h6 class="m-0">Identity Design</h6>
+		</div>
+	</div>
+</section>
+<section id="work" class="flex-container">
+	<div class="row">
+		<h2 class="text-uppercase text-services mt-0">Work</h2>
+		<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam voluptatum atque ipsa consequatur ea ipsam ducimus, minus iste similique perspiciatis tempore sunt, amet. Iusto similique distinctio, sunt ad officia nobis!</h4>
+		<img src="assets/images/hero.png" alt="Hero image" class="img-responsive">
+	</div>
+	<div class="row">
+		<a href="#" class="modal">
+			<div class="work-services">
+				<img src="assets/images/img-1.jpg" alt="Website">
+				<h5 class="mb-0">PROYECTO A</h5>
+			</div>
+		</a>
+		<a href="#" class="modal">
+			<div class="work-services">
+				<img src="assets/images/img-2.jpg" alt="Website">
+				<h5 class="mb-0">PROYECTO B</h5>
+			</div>
+		</a>
+		<a href="#" class="modal">
+			<div class="work-services">
+				<img src="assets/images/img-3.jpg" alt="Website">
+				<h5 class="mb-0">PROYECTO C</h5>
+			</div>
+		</a>
+		<a href="#" class="modal">
+			<div class="work-services">
+				<img src="assets/images/img-4.jpg" alt="Website">
+				<h5 class="mb-0">PROYECTO D</h5>
+			</div>
+		</a>
+		<a href="#" class="modal">
+			<div class="work-services">
+				<img src="assets/images/img-5.jpg" alt="Website">
+				<h5 class="mb-0">PROYECTO E</h5>
+			</div>
+		</a>
+		<a href="#" class="modal">
+			<div class="work-services">
+				<img src="assets/images/img-6.jpg" alt="Website">
+				<h5 class="mb-0">PROYECTO F</h5>
+			</div>
+		</a>
+		<a href="#" class="modal">
+			<div class="work-services">
+				<img src="assets/images/img-7.jpg" alt="Website">
+				<h5 class="mb-0">PROYECTO G</h5>
+			</div>
+		</a>
+		<a href="#" class="modal">
+			<div class="work-services">
+				<img src="assets/images/img-8.jpg" alt="Website">
+				<h5 class="mb-0">PROYECTO H</h5>
+			</div>
+		</a>
+		<a href="#" class="modal">
+			<div class="work-services">
+				<img src="assets/images/img-9.jpg" alt="Website">
+				<h5 class="mb-0">PROYECTO I</h5>
+			</div>
+		</a>
+	</div>
+		
+</section>
+<footer class="flex-container">
+		<p>&copy; Copyright <script type="text/javascript">document.write(new Date().getFullYear());</script></p>
+		<p>Made with <i class="fa fa-heart" aria-hidden="true"></i> by Laboratoria</p>
+		<small>Desarrollado por Caterina Da Silva</small>
+</footer>
+<script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>
